@@ -1,0 +1,10 @@
+- name: Install CLI packages
+  ansible.builtin.dnf:
+    - name:
+      - htop
+      - tmux
+      - python3-neovim
+      - neovim
+      - neofetch
+      - ncdu
+      - zsh

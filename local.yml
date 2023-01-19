@@ -1,1 +1,15 @@
+- hosts: localhost
+  connection: local
+  become: true
+  become_user: true
 
+
+  tasks:
+    - include: galaxy.yml
+    - include: tasks/cli_packages.yml
+    - include: tasks/containers.yml
+    - include: tasks/desktop_apps.yml
+      # - include: tasks/terminal.yml
+
+      #  role:
+      #    - include:

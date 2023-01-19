@@ -1,0 +1,26 @@
+- name: Install flatpaks
+  community.general.flatpak:
+    name:
+      - com.discordapp.Discord
+      - com.calibre_ebook.calibre
+      - com.mattjakeman.ExtensionManager
+      - com.github.tchx84.Flatseal
+      - com.github.johnfactotum.Foliate # This or calibre?
+      - com.obsproject.Studio
+      - org.kde.okular
+        # - com.valvesoftware.Steam
+        # - org.vidoelan.VLC
+        #- org.gnome.Boxes
+
+- name: Install snaps
+  community.general.snap:
+    name:
+      - brave
+      - teams
+        # - telegram-desktop
+
+- name: Install classic snaps
+  community.general.snap:
+    name:
+      - code
+    classic: true

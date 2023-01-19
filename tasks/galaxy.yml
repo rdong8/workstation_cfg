@@ -1,0 +1,24 @@
+- name: Install community.general ansible modules
+  community.general.ansible_galaxy_install:
+    type: collection
+    name: community.general
+
+- name: Install flatpak module
+  community.general.ansible_galaxy_install:
+    type: collection
+    name: community.general.flatpak
+
+- name: Install snap module
+  community.general.ansible_galaxy_install:
+    type: collection
+    name: community.general.snap
+
+- name: Install oh-my-zsh role
+  community.general.ansible_galaxy_install:
+    type: role
+    name: gantsign.oh-my-zsh
+
+- name: Install gnome customization role
+  community.general.ansible_galaxy_install:
+    type: role
+    name: petermosmans.customize-gnome
