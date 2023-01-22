@@ -5,12 +5,12 @@
       - com.calibre_ebook.calibre
       - com.mattjakeman.ExtensionManager
       - com.github.tchx84.Flatseal
-      - com.github.johnfactotum.Foliate # This or calibre?
       - com.obsproject.Studio
       - org.kde.okular
+        # - com.github.johnfactotum.Foliate
         # - com.valvesoftware.Steam
         # - org.vidoelan.VLC
-        #- org.gnome.Boxes
+        # - org.gnome.Boxes
 
 - name: Install snaps
   community.general.snap:
